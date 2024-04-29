@@ -16,7 +16,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/parikshit-coditas/Lamma3_chatmodel_python
+    git clone https://github.com/parikshit-coditas/llama3_QnA_chatmodel.git
     ```
 
 2. **Run the setup script:**
