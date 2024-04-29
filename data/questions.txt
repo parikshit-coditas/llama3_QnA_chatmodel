@@ -1,0 +1,5 @@
+1. What is your name?
+2. What is your age?
+3. How many siblings do you have?
+4. What is your gender?
+5. What is your occupation?
