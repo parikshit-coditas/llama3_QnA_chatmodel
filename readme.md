@@ -40,10 +40,7 @@ Before you begin, ensure you have the following installed:
 
 3. Run `llama3Chatbot.py` to execute code.
 
-    Run following command in terminal. Make sure ollama with llama3 is running
-     ```bash
-     ollama run llama3
-     ```
+    Make sure Ollama is running in background on local machine
 
     To execute code just run
 
