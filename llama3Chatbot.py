@@ -20,7 +20,7 @@ with open('chat_document/answers.txt', 'w') as file:
         file.write(f"{question.strip()}\nAns: {answer}\n")
 
 
-data = SimpleDirectoryReader(input_dir="./data/").load_data()
+data = SimpleDirectoryReader(input_dir="./chat_document/").load_data()
 index = VectorStoreIndex.from_documents(data)
 
 memory = ChatMemoryBuffer.from_defaults(token_limit=400)
