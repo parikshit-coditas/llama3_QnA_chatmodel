@@ -9,16 +9,14 @@ with open('data/questions.txt', 'r') as file:
 
 with open('chat_document/answers.txt', 'w') as file:
     for question in questions:
-        question_number = question.split('.')[0]
         while True:
             answer = input(question.strip() + '\nAns: ')
             response = llm.invoke("If answer to give question is valid and not empty then just say single word valid and if not then invalid, make judgment of answer based on following questions with it's answer \n "+f"{question.strip()}\nAns: {answer}\n")
             if 'Invalid' in response: 
                print("Please provide a valid answer.")
             else:
+                file.write(f"{question.strip()}\nAns: {answer}\n")
                 break
-        file.write(f"{question.strip()}\nAns: {answer}\n")
-
 
 data = SimpleDirectoryReader(input_dir="./chat_document/").load_data()
 index = VectorStoreIndex.from_documents(data)
